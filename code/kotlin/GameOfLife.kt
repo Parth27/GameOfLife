@@ -1,4 +1,4 @@
-fun rules(grid: Array<Array<Int>>, row: Int , col: Int): Int{
+fun rules(grid, row, col): Int{
     var count_neighbors = 0
 
     var i = row
@@ -10,10 +10,9 @@ fun rules(grid: Array<Array<Int>>, row: Int , col: Int): Int{
       var x = neighbors[pair][0]
       var y = neighbors[pair][1]
 
-      if(x<0 || y<0 || x>=grid.size-1 || y>=grid[0].size-1){}
-      else if(grid[x][y] == 1){
-                count_neighbors += 1
-            }
+      if(grid[x][y] == 1){
+          count_neighbors += 1
+      }
         
     }   
     if(count_neighbors<=1 && grid[i][j]==1)
@@ -22,14 +21,12 @@ fun rules(grid: Array<Array<Int>>, row: Int , col: Int): Int{
       return 0
     else if(count_neighbors>=2 && count_neighbors<=3 && grid[i][j]==1)
       return 1
-    else if(count_neighbors==3 && grid[i][j]==0)
-      return 1
     else
       return 0
 }
 
 // to display the grid
-fun display(grid: Array<Array<Int>>){
+fun display(grid){
 
         for (arr in grid){
             
@@ -42,7 +39,7 @@ fun display(grid: Array<Array<Int>>){
         
     }
     
-fun main(args: Array<String>){
+fun main(args){
         // Initialize the grid to 0 
         var grid = Array(8) {Array(8) {0} }
         var steps = 0
