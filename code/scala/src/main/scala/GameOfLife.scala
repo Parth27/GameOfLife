@@ -1,3 +1,6 @@
+import scalaj.http.{Http, HttpOptions}
+
+
 object GameOfLife{
   def rules(grid, cell): Int = {
     var count_neighbors = 0
@@ -36,6 +39,26 @@ object GameOfLife{
     print("\n")
   }
 
+
+  def postResults(grid : Array[Array[Int]]): Unit ={
+
+    var result = ""
+
+    // Display the Board
+    for( i <- 0 to 7) {
+      for (j <- 0 to 7)
+        result += (grid(i)(j)).toString() + ","
+      result += ";"
+    }
+
+    //val rest_result = Http("https://hot-octopus-15.serverless.social/CheckGrid").postData("{"grid: + result +  ""","language":"scala"}""")
+      //.header("Content-Type", "application/json")
+      //.header("Charset", "UTF-8")
+      //.option(HttpOptions.readTimeout(10000)).asString
+    print(result)
+    Http("https://hot-octopus-15.serverless.social/CheckGrid").postForm(Seq("grid" -> result, "language" -> "scala")).asString
+  }
+
   def main(args) {
     var grid = Array.ofDim[Int](8,8)
 
@@ -54,7 +77,7 @@ object GameOfLife{
     grid(1)(2) = 1
     grid(0)(2) = 1
 
-    display(grid)
+    //Sdisplay(grid)
 
 
 
@@ -65,10 +88,12 @@ object GameOfLife{
         for (j <- 0 to 7)
           new_grid(i)(j) = rules(grid, (i, j))
 
-      display(new_grid)
+      //display(new_grid)
 
       grid = new_grid
       steps+=1
     }
+
+    postResults(grid)
   }
 }
