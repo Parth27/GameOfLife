@@ -56,7 +56,7 @@ object GameOfLife{
       //.header("Charset", "UTF-8")
       //.option(HttpOptions.readTimeout(10000)).asString
     print(result)
-    Http("https://hot-octopus-15.serverless.social/CheckGrid").postForm(Seq("grid" -> result, "language" -> "scala")).asString
+    Http("Enter URL here").postForm(Seq("grid" -> result, "language" -> "scala")).asString
   }
 
   def main(args) {
