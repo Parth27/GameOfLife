@@ -88,7 +88,7 @@ object GameOfLife{
         for (j <- 0 to 7)
           new_grid(i)(j) = rules(grid, (i, j))
 
-      //display(new_grid)
+      display(new_grid)
 
       grid = new_grid
       steps+=1
