@@ -2,7 +2,7 @@ import scalaj.http.{Http, HttpOptions}
 
 
 object GameOfLife{
-  def rules(grid): Int = {
+  def rules(grid, cell): Int = {
     var count_neighbors = 0
 
     var i = cell._1
@@ -40,7 +40,7 @@ object GameOfLife{
   }
 
 
-  def postResults(grid): Unit ={
+  def postResults(grid : Array[Array[Int]]): Unit ={
 
     var result = ""
 
