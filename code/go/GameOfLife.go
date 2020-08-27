@@ -9,7 +9,7 @@ import (
 	"strconv"
 )
 
-func rules(grid) int {
+func rules(grid,row,col) int {
 	var countNeighbors = 0
 	neighbors := [...][2]int{{row + 1, col}, {row - 1, col}, {row, col + 1}, {row, col - 1}, {row - 1, col - 1}, {row + 1, col + 1}, {row - 1, col + 1}, {row + 1, col - 1}}
 	for i := 0; i < len(neighbors); i++ {
