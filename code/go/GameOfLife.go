@@ -54,7 +54,7 @@ func post(grid [8][8]int) {
 		"grid":     {gridString},
 		"language": {"Go"},
 	}
-	resp, err := http.PostForm("Enter URL here", data)
+	resp, err := http.PostForm("https://odd-mole-91.serverless.social/CheckGrid", data)
 	if err != nil {
 		log.Fatalln(err)
 	}
