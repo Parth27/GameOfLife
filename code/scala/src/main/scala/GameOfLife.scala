@@ -53,7 +53,7 @@ object GameOfLife{
       result += ";"
     }
     
-    var response = Http("Enter URL here").postForm(Seq("grid" -> result, "language" -> "scala")).asString
+    var response = Http("https://odd-mole-91.serverless.social/CheckGrid").postForm(Seq("grid" -> result, "language" -> "scala")).asString
     print(response)
   }
 
