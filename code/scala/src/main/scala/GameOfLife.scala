@@ -50,13 +50,9 @@ object GameOfLife{
         result += (grid(i)(j)).toString() + ","
       result += ";"
     }
-
-    //val rest_result = Http("https://hot-octopus-15.serverless.social/CheckGrid").postData("{"grid: + result +  ""","language":"scala"}""")
-      //.header("Content-Type", "application/json")
-      //.header("Charset", "UTF-8")
-      //.option(HttpOptions.readTimeout(10000)).asString
-    print(result)
-    Http("Enter URL here").postForm(Seq("grid" -> result, "language" -> "scala")).asString
+    
+    var response = Http("Enter URL here").postForm(Seq("grid" -> result, "language" -> "scala")).asString
+    print(response)
   }
 
   def main(args) {
