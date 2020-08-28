@@ -25,6 +25,8 @@ object GameOfLife{
       return 0
     else if(count_neighbors>=2 && count_neighbors<=3 && grid(i)(j)==1)
       return 1
+    else if(count_neighbors==3 && grid(i)(j)==0)
+      return 1
     else
       return 0
   }
