@@ -82,5 +82,5 @@ func main() {
 		display(newGrid)
 		grid = newGrid
 	}
-	//post(grid)
+	post(grid)
 }
