@@ -25,6 +25,8 @@ func rules(grid,row,col) int {
 		return 0
 	} else if countNeighbors >= 2 && countNeighbors <= 3 && grid[row][col] == 1 {
 		return 1
+	} else if countNeighbors == 3 && grid[row][col] == 0 {
+		return 1
 	} else {
 		return 0
 	}
