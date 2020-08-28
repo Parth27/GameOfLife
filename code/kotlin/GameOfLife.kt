@@ -21,6 +21,8 @@ fun rules(grid, row, col): Int{
       return 0
     else if(count_neighbors>=2 && count_neighbors<=3 && grid[i][j]==1)
       return 1
+    else if(count_neighbors==3 && grid[i][j]==0)
+      return 1
     else
       return 0
 }
@@ -54,7 +56,7 @@ fun main(args){
         display(grid)
 
 
-        while(steps < 10){
+        while(steps < 15){
           var new_grid = Array(8) {Array(8) {0} }
 
       
