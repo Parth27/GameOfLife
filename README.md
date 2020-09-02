@@ -14,6 +14,6 @@ We did not test the code on all three languages for the following reasons:
 
 We will ask our test subjects to debug one of the codes. For providing a runtime environment, we will ask our subjects to connect on online IDEs where we have setup our library dependencies. This way we avoid having to setup runtime environments for each language on the subjects' computers.
 
-We have implemented a Node.js server that will keep communicating with the codes as they debug them. Since we have included logical bugs as well, the server will check when the output of the code matches the desired output and record each subject's debugging time. With three subjects per language, we can use the average debugging time of a language for evaluation. The tokens would assigned randomly from the queue to the test from the server.
+We have implemented a Node.js server that will keep communicating with the codes as they debug them. Since we have included logical bugs as well, the server will check when the output of the code matches the desired output and record each subject's debugging time. With three subjects per language, we can use the average debugging time of a language for evaluation. The tokens are assigned randomly from the queue to the test subject by the server.
 
 We will also provide a google form asking questions about the support and documentation provided by each language to evaluate the ease of debugging them.
