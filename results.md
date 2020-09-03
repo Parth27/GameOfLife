@@ -7,9 +7,12 @@ We limited one test subject to one language for a maximum time of 30 minutes. Th
 After the test we asked each subject to fill out a survey that gave us an idea about their experience with the language.
 ## Materials
 ### Online IDE
-We provided test subjects with online IDEs for debugging the codes. Here is the list of IDEs used
+We provided test subjects with online IDEs for debugging the codes. Here is the list of IDEs used:
+
 Scala: https://scastie.scala-lang.org/
+
 Kotlin: https://try.kotlinlang.org/
+
 Go: https://play.golang.org/
 
 ### Server
