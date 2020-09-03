@@ -4,9 +4,9 @@ The 3 languages we decided to compare are Scala, Kotlin and Go. To do this we im
 ## Materials
 ## Observations
 
-![alt text](https://github.com/Parth27/GameOfLife/blob/master/raw/complete%20.png?raw=true)
-![alt text](https://github.com/Parth27/GameOfLife/blob/master/raw/mean%20.png?raw=true)
-![alt text](https://github.com/Parth27/GameOfLife/blob/master/raw/median%20.png?raw=true)
+![alt text](https://github.com/Parth27/GameOfLife/blob/master/raw/complete.png?raw=true)
+![alt text](https://github.com/Parth27/GameOfLife/blob/master/raw/mean.png?raw=true)
+![alt text](https://github.com/Parth27/GameOfLife/blob/master/raw/median.png?raw=true)
 
 ## Conclusions
 ## Threats to validity
