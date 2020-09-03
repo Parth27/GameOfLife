@@ -16,7 +16,7 @@ Kotlin: https://try.kotlinlang.org/
 Go: https://play.golang.org/
 
 ### Server
-We developed a server that kept track of each test subject's debug time and checked whether or not the subject's output grid matches the correct output. This way we were able to automate the process of evaluating our subjects even when multiple subjects were giving tests simultaneously. The server was also responsible for assigning a token to each test subject by fetching it from our stack of 10 tokens and storing their information in a file.
+We developed a server (using Node.js) that kept track of each test subject's debug time and checked whether or not the subject's output grid matches the correct output. This way we were able to automate the process of evaluating our subjects even when multiple subjects were giving tests simultaneously. The server was also responsible for assigning a token to each test subject by fetching it from our stack of 10 tokens and storing their information in a file.
 
 ### Survey
 We created the survey using Google Forms. This is the [survey](https://forms.gle/MmuK5oDpU2bK6dTy8) we created.
@@ -37,6 +37,5 @@ When we asked our subjects which languages they were familiar with in our survey
 
 Despite Kotline also being similar to Java, it was the hardest to debug for our subjects. The main reason for this was that our subjects did not find Kotlin's documentation very helpful, causing them to be stuck on our syntactical bug.
 ## Threats to validity
-- Challenge 1: How much of that tracking can you automate?
-- Challenge 2: What parts of this analysis should not be automated? How would you do that ?
-- Challenge 3: How to control for the background experience of the subject?
+- Challenge 1: Insufficient data points since available test subjects were only 10. For a thorough analysis of three languages we would need a lot more data points.
+- Challenge 2: Selection of online IDEs. The online IDEs we selected provided features such as keyword highlighting, which made it easier for test subjects to debug our syntactical bug. The IDEs should have been selected in such a way that they provide no built-in support for writing code in that language.
