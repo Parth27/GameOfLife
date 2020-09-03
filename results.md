@@ -7,8 +7,7 @@ The 3 languages we decided to compare are Scala, Kotlin and Go. To do this we im
 ![alt text](https://github.com/Parth27/GameOfLife/blob/master/raw/complete.png?raw=true)
 ![alt text](https://github.com/Parth27/GameOfLife/blob/master/raw/mean.png?raw=true)
 ![alt text](https://github.com/Parth27/GameOfLife/blob/master/raw/median.png?raw=true)
-![alt text](https://github.com/Parth27/GameOfLife/blob/master/raw/avg rating for documentation.jpg?raw=true)
-![alt text](https://github.com/Parth27/GameOfLife/blob/master/raw/rating.png?raw=true)
+![alt text](https://github.com/Parth27/GameOfLife/blob/master/raw/rating.jpg?raw=true)
 
 ## Conclusions
 ## Threats to validity
