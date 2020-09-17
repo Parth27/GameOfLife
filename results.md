@@ -19,7 +19,7 @@ Go: https://play.golang.org/
 We developed a server (using Node.js) that kept track of each test subject's debug time and checked whether or not the subject's output grid matches the correct output. This way we were able to automate the process of evaluating our subjects even when multiple subjects were giving tests simultaneously. The server was also responsible for assigning a token to each test subject by fetching it from our stack of 10 tokens and storing their information in a file.
 
 ### Survey
-We created the survey using Google Forms. This is the [survey](https://forms.gle/MmuK5oDpU2bK6dTy8) we created.
+We created the survey using Google Forms. This is the [survey](https://forms.gle/PK4guvXYarxnMvct6) we created.
 
 ## Observations
 
